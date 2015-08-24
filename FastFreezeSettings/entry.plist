@@ -1,0 +1,10 @@
+{
+	entry = {
+		bundle = FastFreezeSettings;
+		cell = PSLinkCell;
+		detail = "FastFreezeSettingsListController";
+		icon = "FastFreeze.png";
+		isController = 1;
+		label = "Fast Freeze";
+	};
+}

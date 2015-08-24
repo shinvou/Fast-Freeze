@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>title</key>
+	<string>Fast Freeze</string>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSStaticTextCell</string>
+			<key>cellClass</key>
+			<string>FastFreezeBanner</string>
+			<key>height</key>
+			<string>206</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>The Activator event will clear the app switcher, if enabled, and will freeze the enabled applications.</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>label</key>
+			<string>Activation Methods</string>
+			<key>isController</key>
+			<true/>
+			<key>bundle</key>
+			<string>LibActivator</string>
+			<key>activatorListener</key>
+			<string>com.shinvou.fastfreeze.freezethebitches</string>
+			<key>activatorTitle</key>
+			<string>Fast Freeze</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.shinvou.fastfreeze</string>
+			<key>key</key>
+			<string>allowRemove</string>
+			<key>label</key>
+			<string>Clear App Switcher</string>
+			<key>PostNotification</key>
+			<string>com.shinvou.fastfreeze/reloadSettings</string>
+		</dict>
+		<dict>
+			<key>bundle</key>
+			<string>AppList</string>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>isController</key>
+			<true/>
+			<key>label</key>
+			<string>Enabled Applications</string>
+			<key>ALSettingsPath</key>
+			<string>/var/mobile/Library/Preferences/com.shinvou.fastfreeze.plist</string>
+			<key>ALSettingsKeyPrefix</key>
+			<string>FastFreezeEnabled:</string>
+			<key>ALChangeNotification</key>
+			<string>com.shinvou.fastfreeze/reloadSettings</string>
+			<key>ALSettingsDefaultValue</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>CONTACT DEVELOPER</string>
+			<key>footerText</key>
+			<string>Feel free to follow me on Twitter for any updates on my apps and tweaks or contact me for support questions.
+
+This tweak is Open-Source, so make sure to check out my GitHub.</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>action</key>
+			<string>openTwitter</string>
+			<key>icon</key>
+			<string>twitter.png</string>
+			<key>label</key>
+			<string>@biscoditch</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>action</key>
+			<string>openGithub</string>
+			<key>icon</key>
+			<string>github.png</string>
+			<key>label</key>
+			<string>https://github.com/shinvou</string>
+		</dict>
+	</array>
+</dict>
+</plist>

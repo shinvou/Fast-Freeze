@@ -1,0 +1,9 @@
+Package: com.shinvou.fastfreeze
+Name: Fast Freeze
+Depends: mobilesubstrate, preferenceloader, applist, libactivator
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Fast Freeze, the smart way to close apps.
+Maintainer: Timm Kandziora
+Author: Timm Kandziora
+Section: Tweaks
