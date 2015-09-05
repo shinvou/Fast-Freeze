@@ -17,6 +17,11 @@
   return @"Freeze all selected apps in memory";
 }
 
+- (BOOL)activator:(LAActivator *)activator requiresNeedsPoweredDisplayForListenerName:(NSString *)listenerName
+{
+  return NO;
+}
+
 - (void)activator:(LAActivator *)activator receiveEvent:(LAEvent *)event
 {
   CFPreferencesAppSynchronize(CFSTR("com.shinvou.fastfreeze"));
